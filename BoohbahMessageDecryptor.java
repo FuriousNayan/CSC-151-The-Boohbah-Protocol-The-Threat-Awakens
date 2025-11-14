@@ -49,8 +49,8 @@ public class BoohbahMessageDecryptor {
     }
     
     public static void main(String[] args) {
-        String inputFile = "C:\\Users\\npatel24\\Documents\\GitHub\\CSC-151-The-Boohbah-Protocol-The-Threat-Awakens\\encrypted_message.txt";
-        String outputFile = "C:\\Users\\npatel24\\Documents\\GitHub\\CSC-151-The-Boohbah-Protocol-The-Threat-Awakens\\decrypted_message.txt";
+        String inputFile = "encrypted_message.txt";
+        String outputFile = "decrypted_message.txt";
         
         try (BufferedReader myFile = new BufferedReader(new FileReader(inputFile)); FileWriter writer = new FileWriter(outputFile)) {
             String encryptedMessage = myFile.readLine();
